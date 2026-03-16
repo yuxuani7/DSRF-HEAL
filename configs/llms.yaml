@@ -1,0 +1,56 @@
+llms:
+  - name: deepseek-r1-distill-qwen-14b
+    provider: openai_compatible
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_key: "${ALI_ACCESS_TOKEN}"
+    model: "deepseek-r1-distill-qwen-14b"
+    default_params:
+      temperature: 0.2
+      top_p: 0.9
+      stream: true
+  - name: qwen2.5-7b-instruct
+    provider: openai_compatible
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_key: "${ALI_ACCESS_TOKEN}"
+    model: "qwen2.5-7b-instruct"
+    default_params:
+      temperature: 0.2
+      top_p: 0.9
+      stream: true
+  - name: kimi-k2.5
+    provider: openai_compatible
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_key: "${ALI_ACCESS_TOKEN}"
+    model: "kimi-k2.5"
+    default_params:
+      temperature: 0.2
+      top_p: 0.9
+      stream: true
+  - name: MiniMax-M2.5
+    provider: openai_compatible
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_key: "${ALI_ACCESS_TOKEN}"
+    model: "MiniMax-M2.5"
+    default_params:
+      temperature: 0.2
+      top_p: 0.9
+      stream: true
+  - name: qwen3-max
+    provider: openai_compatible
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    api_key: "${ALI_ACCESS_TOKEN}"
+    model: "qwen3-max"
+    default_params:
+      temperature: 0.2
+      top_p: 0.9
+      stream: true
+  - name: DeepSeek-R1-Distill-Llama-8B
+    provider: openai_compatible
+    base_url: "https://api-inference.modelscope.cn/v1"
+    api_key: "${MODELSCOPE_ACCESS_TOKEN}"
+    model: "deepseek-ai/DeepSeek-R1-Distill-Llama-8B:DashScope"
+    default_params:
+      temperature: 0.2
+      top_p: 0.9
+      stream: true
+      
